@@ -73,7 +73,7 @@ public class CheckOutSteps {
     }
 
     //@And("User calculate {float} as subtotal and {float} as tax and {float} as total")
-    @Then("User Validate total value")
+    @Then("User validate total value")
     public void userCalculateTaxAndSubtotal() {
         Assert.assertTrue(checkOut.calculate());
     }

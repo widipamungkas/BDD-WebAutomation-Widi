@@ -1,5 +1,0 @@
-step_definitions\LoginSteps.class
-runCukes\RunCukesTest.class
-step_definitions\CheckOutSteps.class
-step_definitions\InventorySteps.class
-hooks\Hooks.class

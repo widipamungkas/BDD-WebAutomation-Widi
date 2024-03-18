@@ -19,6 +19,6 @@
     And User input "Widi" as FirstName and "Pamungkas" as LastName and "46156" as zipCode
     Then User click button continue
     And User will redirected to checkout overview page
-    Then User Validate total value
+    Then User validate total value
     Then User click finish button
     And User will redirected to checkout complete page
