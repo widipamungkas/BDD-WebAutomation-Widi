@@ -115,9 +115,6 @@ public class CheckoutPageSauce {
         Double taxDouble = Double.parseDouble(taxCleanedString);
         Double subtotalDouble = Double.parseDouble(subTotalCleanedString);
         Double totalDouble = Double.parseDouble(totalCleanedString);
-/*        System.out.println(taxDouble);
-        System.out.println(subtotalDouble);
-        System.out.println(totalDouble);*/
 
         // fungsi penjumlahan
         Double subtotaltax = taxDouble + subtotalDouble;

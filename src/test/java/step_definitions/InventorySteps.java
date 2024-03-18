@@ -13,9 +13,9 @@ public class InventorySteps {
         LoginPage loginPage = new LoginPage(driver);
 
         @When("User sort product by {string}")
-        public void sortProduct(String text) throws InterruptedException {
+        public void sortProduct(String text) {
             inventoryPage.selectSortProduct(text);
-            Thread.sleep(3000);
+
         }
 
         @And("User click add to cart item sauce labs fleece jacket")
@@ -24,9 +24,9 @@ public class InventorySteps {
         }
 
     @And("User add to click button add to cart item {string}")
-    public void userAddToClickButtonAddToCartItem(String item) throws InterruptedException {
+    public void userAddToClickButtonAddToCartItem(String item)  {
         inventoryPage.clickAddToCartItem(item);
-        Thread.sleep(3000);
+
     }
 
     @And("User click icon badge to cart for checkout")

@@ -25,15 +25,14 @@ public class CheckOutSteps {
     private Object list;
 
     @Then("User will redirected to page checkout list")
-    public void userAlreadyOnCheckOutPage() throws InterruptedException{
+    public void userAlreadyOnCheckOutPage() {
         Assert.assertTrue(checkOut.verifyCheckOutPage());
-        Thread.sleep(3000);
+
     }
 
     @And("User click remove one item {string}")
-    public void userClickRemoveOneItem(String productName) throws InterruptedException{
+    public void userClickRemoveOneItem(String productName) {
         checkOut.removeCart(productName);
-        Thread.sleep(5000);
     }
 
     @And("User click button checkout")
@@ -41,15 +40,15 @@ public class CheckOutSteps {
         checkOut.CheckOut();
     }
 
-    @Then("User will redirected to Information Buyer")
+    @Then("User will redirected to information buyer page")
     public void userWillRedirectedToInformationBuyer() {
         Assert.assertTrue(checkOut.dataInformation());
             }
 
     @And("User input {string} as FirstName and {string} as LastName and {string} as zipCode")
-    public void customerInformation(String Username, String Lastname, String Postal) throws InterruptedException{
+    public void customerInformation(String Username, String Lastname, String Postal) {
         checkOut.infoBuyer(Username, Lastname, Postal);
-        Thread.sleep(3000);
+
     }
 
     @Then("User click button continue")
@@ -57,10 +56,10 @@ public class CheckOutSteps {
         checkOut.ClickContinue();
     }
 
-    @And("User will redirected to Checkout Overview Page")
-    public void userWillRedirectedToCheckoutOverviewPage() throws InterruptedException{
+    @And("User will redirected to checkout overview page")
+    public void userWillRedirectedToCheckoutOverviewPage() {
         Assert.assertTrue(checkOut.summary());
-        Thread.sleep(4000);
+
     }
 
     @Then("User click finish button")
@@ -68,10 +67,9 @@ public class CheckOutSteps {
         checkOut.ClickButtonFinish();
     }
 
-    @And("User will redirected to Checkout Complete page")
-    public void userWillRedirectedToCheckoutCompletePage() throws InterruptedException{
+    @And("User will redirected to checkout complete page")
+    public void userWillRedirectedToCheckoutCompletePage() {
         Assert.assertTrue(checkOut.complete());
-        Thread.sleep(4000);
     }
 
     //@And("User calculate {float} as subtotal and {float} as tax and {float} as total")

@@ -15,11 +15,10 @@
     Then User will redirected to page checkout list
     And User click remove one item "Sauce Labs Bike Light"
     And User click button checkout
-    Then User will redirected to Information Buyer
+    Then User will redirected to information buyer page
     And User input "Widi" as FirstName and "Pamungkas" as LastName and "46156" as zipCode
     Then User click button continue
-    And User will redirected to Checkout Overview Page
-    #And User calculate 9.99 as subtotal and 0.80 as tax and 10.79 as total
+    And User will redirected to checkout overview page
     Then User Validate total value
     Then User click finish button
-    And User will redirected to Checkout Complete page
+    And User will redirected to checkout complete page
